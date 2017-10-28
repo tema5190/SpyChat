@@ -9,7 +9,8 @@
     "lint": "ng lint",
 
     "build-electron": "ng build --base-href . && copy src\\electron\\* dist",
-    "electron": "npm run build-electron && electron dist"
+    "electron": "npm run build-electron && electron dist",
+    "watch": "ng build --watch"
   },
   "private": true,
   "dependencies": {
