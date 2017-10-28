@@ -1,6 +1,9 @@
-<div>
+<mat-sidenav-container class="container">
 
-  
+  <mat-sidenav #sidenav class="sidenav" (mouseenter)="sidenav.open()" (mouseover)="sidenav.close()">
+    <spy-chat-menu></spy-chat-menu>
+  </mat-sidenav>
 
-</div>
+  <div class="sidenav-trigger-border" (mouseenter)="sidenav.open()" (mouseover)="sidenav.close()"></div>
 
+</mat-sidenav-container>
