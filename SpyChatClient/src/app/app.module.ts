@@ -1,30 +1,19 @@
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './modules/login/login.component';
-import { MainComponent } from './modules/main/main.component';
-import { RouterModule, Routes } from '@angular/router';
-
-import { MatFormFieldModule } from '@angular/material';
-
-const appRoutes: Routes = [
-  { path: '', component: MainComponent},
-  { path: '/login', component: LoginComponent},
-];
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
+import { MainComponent } from './modules/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     MainComponent,
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true},
-    ),
-    MatFormFieldModule,
+    BrowserModule,
+
+ 
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
