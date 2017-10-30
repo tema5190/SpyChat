@@ -5,6 +5,8 @@ import { FormsModule }   from '@angular/forms';
 import { MainComponent } from './modules/main.component';
 import { MainModule } from './modules/main.module';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +15,7 @@ import { MainModule } from './modules/main.module';
     BrowserModule,
     MainModule,
     // Imports
-    
+    FlexLayoutModule,
   ],
   bootstrap: [AppComponent],
 })
